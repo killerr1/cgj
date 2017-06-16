@@ -61,10 +61,11 @@ small{font-size:$number_12;color:$gray-light-color}
 .m-t20{margin-top:20px;}
 
 /*按钮*/
-.btns-form{background:$btn-bg-color;color:$white-color;font-size:$number_14;height:$toolbar;position:fixed;bottom:0;left:0;width:100%}
-.btns-white{background:$white-color;height:$btn_height;color:$org-color;width:100%;border-radius:5px;border:1px solid $org-color}
-.btns-gray{background:$white-color;height:$btn_height;color:$org-color;width:100%;border-radius:5px;border:1px solid $br-color}
-.btns-org{background:$btn-bg-color;height:$btn_height;color:$white-color;width:100%;border-radius:5px}
+.btns-form{background:$btn-bg-color;color:$white-color;font-size:$number_14;height:$toolbar;position:fixed;bottom:0;left:0;width:100%;font-size:$number_14}
+.btns-white{background:$white-color;height:$btn_height;color:$org-color;width:100%;border-radius:5px;border:1px solid $org-color;font-size:$number_14}
+.btns-gray-1{background:$white-color;height:$btn_height;color:$gray-color;width:100%;border-radius:5px;border:1px solid $br-color;font-size:$number_14}
+.btns-gray{background:$white-color;height:$btn_height;color:$org-color;width:100%;border-radius:5px;border:1px solid $br-color;font-size:$number_14}
+.btns-org{background:$btn-bg-color;height:$btn_height;color:$white-color;width:100%;border-radius:5px;font-size:$number_14}
 .detail-btns-box{position:fixed;bottom:0;left:0;width:100%;height:$toolbar;
   & ._left{overflow:hidden;background:$white-color;height:$toolbar;
     & .link{font-size:$number_14;color:$gray-color;@include hairline(right,$br-color);position:relative;font-size:$number_14;color:#344750;
@@ -178,33 +179,33 @@ small{font-size:$number_12;color:$gray-light-color}
 .detail-li{overflow:hidden;
   & .top-nav{overflow:hidden;background:#fff;margin-bottom:10px;min-height:80px;font-size:$number_14;padding:0 20px;position:relative;
     &>div{position:relative;
-      & .pro_text{text-align:center;width:90%;padding-top:5px;
+      & .pro_text{text-align:center;width:90%;padding-top:8px;font-size:14px;
         &>div{text-align:center;}
       }
       & .pro_bar{height:20px;width:90%;position:relative;
         & .pro-ing{width:70%;position:absolute;
-          & .pro-bar-l{width:100%;height:5px;background:#ccc;position:absolute;top:45%;left:0;z-index:98;}
-          & .pro-bar-r{background:$btn-bg-color;}
+          & .pro-bar-l{width:100%;height:5px;background:#adbec4;position:absolute;top:45%;left:0;z-index:98;}
+          & .pro-bar-r{background:#adbec4;}
         }
-        & .icon{background:url(http://img1.gtimg.com/news/pics/hv1/103/174/2216/144139873.jpg) no-repeat center;background-size:30px;height:30px;width:30px;position:relative;z-index:99}
+        & .icon{background:url($nav-default) no-repeat center 2px;background-size:cover;height:22px;width:22px;position:relative;z-index:99}
       }
     }
     & .p1{
-      & .icon-1{background-image: url("http://img1.gtimg.com/news/pics/hv1/95/174/2216/144139865.jpg") !important;}
+      & .icon-1{background-image: url($nav-check) !important;}
       & .p-t-1{color:$btn-bg-color;}
       & .pro-bar-r{width:0% !important;}
     }
     & .p2{
-      & .icon-1{background-image: url("http://img1.gtimg.com/news/pics/hv1/95/174/2216/144139865.jpg") !important;}
-      & .icon-2{background-image: url("http://img1.gtimg.com/news/pics/hv1/95/174/2216/144139865.jpg") !important;}
+      & .icon-1{background-image: url($nav-check) !important;}
+      & .icon-2{background-image: url($nav-check) !important;}
       & .p-t-1{color:$btn-bg-color;}
       & .p-t-2{color:$btn-bg-color;}
       & .pro-bar-r{width:50% !important;}
     }
     & .p3{
-      & .icon-1{background-image: url("http://img1.gtimg.com/news/pics/hv1/95/174/2216/144139865.jpg") !important;}
-      & .icon-2{background-image: url("http://img1.gtimg.com/news/pics/hv1/95/174/2216/144139865.jpg") !important;}
-      & .icon-3{background-image: url("http://img1.gtimg.com/news/pics/hv1/95/174/2216/144139865.jpg") !important;}
+      & .icon-1{background-image: url($nav-check) !important;}
+      & .icon-2{background-image: url($nav-check) !important;}
+      & .icon-3{background-image: url($nav-check) !important;}
       & .p-t-1{color:$btn-bg-color;}
       & .p-t-2{color:$btn-bg-color;}
       & .p-t-3{color:$btn-bg-color;}
@@ -214,8 +215,8 @@ small{font-size:$number_12;color:$gray-light-color}
   & .mid-list{padding:0 10px;background:$white-color;
     &>div:last-child{@include hairline(bottom,$white-color);}
     & .li{font-size:$number_14;background:$white-color;min-height:50px;position:relative;padding:0 12px 0 0;color:$gray-light-color;@include hairline(bottom,$br-color);
-      & .l{overflow:hidden;font-size:$number_14}
-      & .r{color:$gray-color;padding-left:20px;height:100%;
+      & .l{overflow:hidden;font-size:$number_14;}
+      & .r{color:$black-light-color;padding-left:10px;height:100%;
         & input{border:none;height:100%;width:100%; }
         &.textarea{padding:10px 0 10px 10px;height:100px}
         & textarea{border:none;height:100%;width:100%;}
@@ -227,7 +228,7 @@ small{font-size:$number_12;color:$gray-light-color}
       }
     }
   }
-  & .detail-btns{margin:30px 0;padding:0 20px;}
+  & .detail-btns{margin:30px 0;padding:0 10px;}
 }
 
 /*消息提示类页面*/
@@ -311,9 +312,9 @@ small{font-size:$number_12;color:$gray-light-color}
 /*个人资料*/
 .uinfo{overflow:hidden;
   & .info-li{@include hairline(bottom,$br-color);background:$white-color;padding:0 10px;color:$black-light-color;position:relative;
-    & .li{min-height:50px;@include hairline(bottom,$br-color);position:relative;
+    & .li{min-height:50px;@include hairline(bottom,$br-color);position:relative;font-size:$number_14;
       & img{height:45px;width:45px;border-radius:50%;}
-      & .arrow-right{background:url(https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1875435674,2751259477&fm=117&gp=0.jpg) no-repeat;background-size:contain;width:10px;height:10px;}
+      & .arrow-right{background:url($arrow-right) no-repeat;background-size:16px;width:20px;height:20px;}
     }
     & .userheader{padding:10px 0;}
     & div:last-child:after{display:none;}
@@ -325,19 +326,21 @@ small{font-size:$number_12;color:$gray-light-color}
   & .li + .li{margin-top:10px;}
   & .li{background:$white-color;overflow:hidden;padding:20px;font-size:$number_14;color:$gray-color;padding-bottom:0;
     & .address-info{position:relative;@include hairline(bottom,$br-color);padding-bottom:10px;
-      & .title{}
+      & .title{font-size:$number_14;}
       & .address-check{}
     }
     & .address-edit{color:$gray-light-color;padding:10px 0;
-      & .icon-check{height:30px;width:30px;background:url(https://gss0.bdstatic.com/70cFfyinKgQIm2_p8IuM_a/daf/pic/item/8c1001e93901213f46270ef35ee736d12f2e958d.jpg) no-repeat center;background-size:100%;margin-right:5px;}
-      & .edit-button{border:1px solid $br-color;border-radius:20px;padding:5px 20px;color:$gray-color;}
+      & .icon-check{height:20px;width:20px;background:url($checkbox-default) no-repeat center;background-size:cover;margin-right:5px;}
+      & input[type=checkbox]:checked + div{background:url($checkbox-action) no-repeat center;background-size:cover;margin-right:5px;}
+      & .edit-button{border:1px solid $br-color;border-radius:20px;padding:5px 26px;color:$black-light-color;letter-spacing: 2px}
     }
   }
   & .active{color:$org-color;
-    & .address-check{height:30px;width:30px;background:url(https://gss0.bdstatic.com/70cFfyinKgQIm2_p8IuM_a/daf/pic/item/8c1001e93901213f46270ef35ee736d12f2e958d.jpg) no-repeat center;background-size:100%;}
+    & .address-check{margin-left:10px;height:20px;width:20px;background:url($hook-icon) no-repeat center;background-size:cover;}
     & .address-edit{color:$org-color;padding:10px 0;
-      & .icon-check{height:30px;width:30px;background:url(https://gss0.bdstatic.com/70cFfyinKgQIm2_p8IuM_a/daf/pic/item/8c1001e93901213f46270ef35ee736d12f2e958d.jpg) no-repeat center;background-size:100%;margin-right:5px;}
-      & .edit-button{border:1px solid $br-color;border-radius:20px;padding:5px 20px;color:$gray-color;}
+      & .icon-check{height:20px;width:20px;background:url($checkbox-default) no-repeat center;background-size:cover;margin-right:5px;}
+      & input[type=checkbox]:checked + div{background:url($checkbox-action) no-repeat center;background-size:cover;margin-right:5px;}
+      & .edit-button{border:1px solid $br-color;border-radius:20px;padding:5px 26px;color:$black-light-color;letter-spacing: 2px}
     }
   }
 }

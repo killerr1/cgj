@@ -39,4 +39,13 @@ html/module/user/stopped.html;
 表单提交页面(服务部分暂时没有增加选项框,有部分没有选项框的可以用此页面)
 html/module/user/appointment_action.html;
 
+地址列表的
+html/module/user/address.html;
+
+个人信息
+html/module/user/userinfo.html;
+
+预约详情步骤(应该通用其他的状态,如果有问题请沟通)
+html/module/user/appointment_order_action.html;
+
 ∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽
