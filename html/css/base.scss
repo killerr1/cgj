@@ -60,7 +60,7 @@ small{font-size:$number_12;color:$gray-light-color}
 
 /*按钮*/
 .btns-form{background:$btn-bg-color;color:$white-color;font-size:$number_14;height:$toolbar;position:fixed;bottom:0;left:0;width:100%}
-.btns-white{background:$white-color;height:$btn_height;color:$org-color;width:100%;border-radius:5px;border:1px solid $br-color}
+.btns-white{background:$white-color;height:$btn_height;color:$org-color;width:100%;border-radius:5px;border:1px solid $org-color}
 .btns-gray{background:$white-color;height:$btn_height;color:$org-color;width:100%;border-radius:5px;border:1px solid $br-color}
 .btns-org{background:$btn-bg-color;height:$btn_height;color:$white-color;width:100%;border-radius:5px}
 .detail-btns-box{position:fixed;bottom:0;left:0;width:100%;height:$toolbar;
@@ -287,18 +287,18 @@ small{font-size:$number_12;color:$gray-light-color}
   & .logo{overflow:hidden;
     &>img{max-width:100%}
   }
-  & .input-li{width:100%;padding-top:40px;padding:0 20px;
+  & .input-li{width:100%;padding:0 20px;
     & button.getcode{border:1px solid $br-color;border-radius:5px;background:$white-color;color:$gray-color;width:200px;height:70%;font-size:$number_14}
     & button.dis{color:$gray-color;}
-    &>div{height:60px;@include hairline(bottom,$br-color);position:relative;padding-left:50px;
-      &>input{border:none;height:100%;width:100%;background:none;font-size:$number_14;}
+    &>div{height:60px;@include hairline(bottom,$br-color);position:relative;padding-left:30px;
+      &>input{border:none;height:100%;width:100%;background:none;font-size:$number_14;color:$black-light-color;}
     }
-    &>div.user{background:url(https://gss0.bdstatic.com/70cFfyinKgQIm2_p8IuM_a/daf/pic/item/8c1001e93901213f46270ef35ee736d12f2e958d.jpg) no-repeat left center;background-size:40px;}
-    &>div.pwd{background:url(https://gss0.bdstatic.com/70cFfyinKgQIm2_p8IuM_a/daf/pic/item/8c1001e93901213f46270ef35ee736d12f2e958d.jpg) no-repeat left center;background-size:40px;}
+    &>div.user{background:url($phone-icon) no-repeat left center;background-size:18px;}
+    &>div.pwd{background:url($password-icon) no-repeat left center;background-size:18px;}
     &>div.getpwd{text-align:right;color:$org-color;;padding-top:10px;}
     &>div.getpwd:after{display:none;}
   }
-  & .login-btns{margin-top:70px;width:100%;padding:0 20px;}
+  & .login-btns{margin-top:20px;width:100%;padding:0 20px;}
 }
 
 /*个人资料*/
