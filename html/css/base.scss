@@ -47,7 +47,7 @@ small{font-size:$number_12;color:$gray-light-color}
 .font-black-light{color:$black-light-color;}
 .font-gray{color:$gray-color;}
 .font-gray-light{color:$gray-light-color;}
-.font-org{color:$org-color;}
+.font-org{color:$org-color !important;}
 .font-blue-light{color:$blue-light-coolor;}
 .f12{font-size:$number_12;}
 .f14{font-size:$number_14;}
@@ -55,6 +55,8 @@ small{font-size:$number_12;color:$gray-light-color}
 .p-r10{padding-right:10px; }
 .p-t10{padding-top:10px;}
 .p-t20{padding-top:20px;}
+.p-b20{padding-bottom:20px;}
+.p-b10{padding-bottom:10px;}
 .m-t10{margin-top:10px;}
 .m-t20{margin-top:20px;}
 
@@ -65,8 +67,11 @@ small{font-size:$number_12;color:$gray-light-color}
 .btns-org{background:$btn-bg-color;height:$btn_height;color:$white-color;width:100%;border-radius:5px}
 .detail-btns-box{position:fixed;bottom:0;left:0;width:100%;height:$toolbar;
   & ._left{overflow:hidden;background:$white-color;height:$toolbar;
-    & .link{font-size:$number_14;color:$gray-color;@include hairline(right,$br-color);position:relative;
+    & .link{font-size:$number_14;color:$gray-color;@include hairline(right,$br-color);position:relative;font-size:$number_14;color:#344750;
+      & .fev-icon{height:20px;width:20px;background:url($fav-icon-default) no-repeat left center;background-size:cover;}
+      & .tel-icon{height:20px;width:20px;background:url($tel-icon) no-repeat left center;background-size:cover;}
       &>img{height:20px;width:20px;}
+      &>span{padding-top:1px;}
     }
     &>a:last-child:after{display:none;}
   }
@@ -138,7 +143,7 @@ small{font-size:$number_12;color:$gray-light-color}
       & input{border:none;height:100%;width:100%;font-size:$number_14;color:$black-light-color;}
       &.textarea{padding:10px 0 10px 10px;height:100px;font-size:$number_14;color:$black-light-color;}
       & textarea{border:none;height:100%;width:100%;font-size:$number_14;}
-      & .checkbtn{border-radius:5px;background:#adbec4;color:$white-color;height:24px;padding:0 16px}
+      & .checkbtn{border-radius:5px;background:#adbec4;color:$white-color;height:26px;padding:0 16px}
       & .checkbtn +.checkbtn{margin-left:10px}
       & .active{background:$org-color;color:$white-color}
     }
@@ -243,26 +248,27 @@ small{font-size:$number_12;color:$gray-light-color}
 
 .list-content{overflow:hidden;padding-top:40px;
   & .items{margin-top:10px;@include hairline(top,$br-color);@include hairline(bottom,$br-color);overflow:hidden;
-    & .type{background:#fff;height:30px;font-size:$number_14;padding:0 10px;
-      & .l{color:$gray-light-color;}
-      & .r{color:$org-color;}
+    & .type{background:#fff;height:36px;font-size:$number_14;padding:0 10px;
+      & .l{color:$black-light-color;}
+      & .r{color:$org-color;font-size:$number_12; }
     }
     & .info{overflow:hidden;font-size:$number_14;padding:10px;
       & .l-img{padding-right:10px;
         &>img{height:60px;width:60px;}
       }
-      & .m{overflow:hidden;height:50px;
+      & .m{overflow:hidden;height:50px;color:$black-light-color;
         &>div{width:100%;}
       }
       & .r{overflow:hidden;height:50px;
         &>div{width:100%;text-align:right}
       }
-      & .tag{color:$white-color;background:$black-light-color;border-radius:5px;padding:0 5px;}
+      & .tag{color:$white-color;background:#adbec4;border-radius:5px;padding:2px 6px;}
     }
     & .info-bgwhite{background:$white-color;}
-    & .buttons{height:40px;background:$white-color;padding-right:10px;
-      & button{border:1px solid $br-color;background:$white-color;border-radius:14px;margin-left:12px;padding:0 10px;height:26px;
+    & .buttons{height:40px;background:$white-color;padding-right:10px;font-size:$number_14;
+      & button{border:1px solid $br-color;background:$white-color;border-radius:14px;margin-left:12px;padding:0 10px;height:24px;
         &.org{color:$org-color;}
+        &.org-bg{color:$white-color;background:$org-color;border:none;}
       }
     }
     & .buttons-nobg{height:40px;padding-right:10px;background:#f7f7f7;
@@ -379,7 +385,7 @@ small{font-size:$number_12;color:$gray-light-color}
 }
 .worker_info{overflow:hidden;background:$white-color;padding:10px 15px;@include hairline(bottom,$br-color);@include hairline(top,$br-color);position:relative;
   & .title{font-size:$number_16;color:$black-light-color;position:relative;@include hairline(bottom,$br-color);height:30px;}
-  & .worker_info_content{overflow:hidden;
+  & .worker_info_content{overflow:hidden;font-size:$number_14;
     >div{width:100%;}
     &>div:nth-child(-n+4){width:50%;}
     & ._cloumn{height:35px;
@@ -391,8 +397,9 @@ small{font-size:$number_12;color:$gray-light-color}
 
 .worker_imgs{overflow:hidden;background:$white-color;padding:10px 15px;@include hairline(bottom,$br-color);@include hairline(top,$br-color);position:relative;
   & .title{font-size:$number_16;color:$black-light-color;position:relative;@include hairline(bottom,$br-color);height:30px;}
-  & .worker_imgs_content{overflow:hidden;padding-top:10px;height:110px;
-    &>img{width:30%;height:100%}
+  & .worker_imgs_content{overflow:hidden;padding-top:10px;height:auto;
+    & div{position:relative;width:30%;overflow:hidden;height:100%;}
+    & img{max-width:100%;height:auto;}
   }
 }
 
@@ -400,7 +407,7 @@ small{font-size:$number_12;color:$gray-light-color}
   & .title{font-size:$number_16;color:$black-light-color;position:relative;@include hairline(bottom,$br-color);height:30px;}
   & .worker_broker_content{overflow:hidden;padding:10px 0;
     &>img{height:60px;width:60px;}
-    & .r-text{padding-left:10px;
+    & .r-text{padding-left:10px;font-size:$number_14;
       &>div:last-child{padding-top:6px}
     }
   }
@@ -426,13 +433,13 @@ small{font-size:$number_12;color:$gray-light-color}
 
 /*暂停订单的订单部分样式*/
 .stoped-order-info{overflow:hidden;
-  & .title{font-size:$number_14;color:$black-light-color;padding-left:20px;height:30px;line-height:30px;}
-  & .items{background:$white-color;margin-top:10px;@include hairline(top,$br-color);@include hairline(bottom,$br-color);overflow:hidden;
-    & .type{background:#fff;height:30px;font-size:$number_14;padding:0 10px;
-      & .l{color:$gray-light-color;}
-      & .r{color:$org-color;}
+  & .title{font-size:$number_14;color:$gray-light-color;padding-left:20px;height:30px;line-height:30px;}
+  & .items{background:$white-color;@include hairline(top,$br-color);@include hairline(bottom,$br-color);overflow:hidden;padding-bottom:20px;
+    & .type{background:#fff;height:36px;font-size:$number_14;padding:0 10px;
+      & .l{color:$black-light-color;}
+      & .r{color:$org-color;font-size:$number_12;}
     }
-    & .info{overflow:hidden;font-size:$number_14;padding:10px;
+    & .info{overflow:hidden;font-size:$number_14;padding:10px;background:$bg-color;
       & .l-img{padding-right:10px;
         &>img{height:60px;width:60px;}
       }
@@ -447,11 +454,11 @@ small{font-size:$number_12;color:$gray-light-color}
   }
 }
 
-.agreement-li-check{background:none;padding:10px;color:$black-light-color;
-  & .icon-check{height:30px;width:30px;background:url(https://gss0.bdstatic.com/70cFfyinKgQIm2_p8IuM_a/daf/pic/item/8c1001e93901213f46270ef35ee736d12f2e958d.jpg) no-repeat center;background-size:100%;margin-right:5px;}
-  & .active{height:30px;width:30px;background:url(https://gss0.bdstatic.com/70cFfyinKgQIm2_p8IuM_a/daf/pic/item/8c1001e93901213f46270ef35ee736d12f2e958d.jpg) no-repeat center;background-size:100%;margin-right:5px;}
+.agreement-li-check{background:none;padding:10px;color:$black-light-color;font-size:$number_14;padding-top:16px;
+  & .icon-check{height:20px;width:20px;background:url($checkbox-default) no-repeat center;background-size:cover;margin-right:5px;}
+  & input[type=checkbox]:checked + div{background:url($checkbox-action) no-repeat center;background-size:cover;margin-right:5px;}
 }
-.agreement-li-btns{padding:60px 10px 0 10px;}
+.agreement-li-btns{padding:40px 10px 0 10px;}
 
 /*阿姨端*/
 
