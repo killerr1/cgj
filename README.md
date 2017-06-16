@@ -18,6 +18,14 @@ html/module/worker/home.html;
 登录
 html/module/user/login.html;
 
+注册
+html/module/user/register.html;
+
+找回密码
+html/module/user/resetpwd.html;
+
+操作消息模板
+html/module/user/msg-model.html;
 
 ∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽
 

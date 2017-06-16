@@ -229,7 +229,7 @@ small{font-size:$number_12;color:$gray-light-color}
 .model-info{overflow:hidden;background:$white-color;padding:20px;
   & .msg-icon{height:130/2 * 1px;width:130/2 * 1px;padding-bottom:10px;}
 }
-.model-btn{position:fixed;bottom:40px;width:100%;padding:0 20px}
+.model-btn{position:fixed;bottom:40px;width:100%;padding:0 20px;font-size:$number_14;}
 
 /*订单列表*/
 .nav-bar{height:40px;background:$white-color;@include hairline(bottom,$br-color);position:fixed;width:100%;
@@ -288,17 +288,18 @@ small{font-size:$number_12;color:$gray-light-color}
     &>img{max-width:100%}
   }
   & .input-li{width:100%;padding:0 20px;
-    & button.getcode{border:1px solid $br-color;border-radius:5px;background:$white-color;color:$gray-color;width:200px;height:70%;font-size:$number_14}
-    & button.dis{color:$gray-color;}
+    & button.getcode{border:1px solid $blue-light-coolor;border-radius:5px;background:$white-color;color:$blue-light-coolor;width:200px;height:60%;font-size:$number_14}
+    & button.dis{color:$gray-color;border:1px solid $gray-light-color}
     &>div{height:60px;@include hairline(bottom,$br-color);position:relative;padding-left:30px;
       &>input{border:none;height:100%;width:100%;background:none;font-size:$number_14;color:$black-light-color;}
     }
     &>div.user{background:url($phone-icon) no-repeat left center;background-size:18px;}
     &>div.pwd{background:url($password-icon) no-repeat left center;background-size:18px;}
-    &>div.getpwd{text-align:right;color:$org-color;;padding-top:10px;}
-    &>div.getpwd:after{display:none;}
+    &>div.code{background:url($code-icon) no-repeat left center;background-size:18px;}
   }
   & .login-btns{margin-top:20px;width:100%;padding:0 20px;}
+  & .getpwd{text-align:right;color:$org-color;padding-top:10px;font-size:$number_14;}
+  & .getpwd:after{display:none !important;}
 }
 
 /*个人资料*/
