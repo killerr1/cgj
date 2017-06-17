@@ -546,3 +546,26 @@ small{font-size:$number_12;color:$gray-light-color}
     & img{max-width:100%;height:auto;}
   }
 }
+
+/*个人资料的编辑*/
+.worker-edit-content{overflow:hidden;
+  & ._title{background:#fff;height:36px;font-size:$number_14;@include hairline(bottom,$br-color);position:relative;}
+  & .items{position:relative;margin-top:10px;@include hairline(top,$br-color);@include hairline(bottom,$br-color);overflow:hidden;background:$white-color;padding:0 10px;
+    & .type{background:#fff;height:36px;font-size:$number_14;padding:0 10px;
+      & .l{color:$black-light-color;}
+      & .r{color:$org-color;font-size:$number_12; }
+    }
+    & .info{overflow:hidden;font-size:$number_14;padding:10px;padding-left:0;
+      & .l-img{padding-right:10px;
+        &>img{height:60px;width:60px;}
+      }
+      & .m{overflow:hidden;height:50px;color:$black-light-color;
+        &>div{width:100%;}
+      }
+      & .r{overflow:hidden;height:50px;
+        &>div{width:100%;text-align:right}
+      }
+      & .tag{color:$white-color;background:#adbec4;border-radius:5px;padding:2px 6px;}
+    }
+  }
+}
