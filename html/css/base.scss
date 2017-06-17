@@ -33,10 +33,10 @@ small{font-size:$number_12;color:$gray-light-color}
 .mg-l-clear { margin-left: 0; }
 .mg-r-clear { margin-right: 0; }
 .pd-clear { padding: 0; }
-.pd-t-clear { padding-top: 0; }
-.pd-b-clear { padding-bottom: 0; }
-.pd-l-clear { padding-left: 0; }
-.pd-r-clear { padding-right: 0; }
+.pd-t-clear { padding-top: 0 !important; }
+.pd-b-clear { padding-bottom: 0 !important; }
+.pd-l-clear { padding-left: 0 !important; }
+.pd-r-clear { padding-right: 0 !important; }
 .fl { float: left !important; }
 .fr { float: right !important; }
 
@@ -282,6 +282,12 @@ small{font-size:$number_12;color:$gray-light-color}
       }
       & .tag{color:$white-color;background:#adbec4;border-radius:5px;padding:2px 6px;}
     }
+    /*处理类似相册的特殊逻辑*/
+    & .worker_imgs_content{overflow:hidden;padding-top:10px;height:auto;
+      & div{position:relative;width:30%;overflow:hidden;height:100%;}
+      & img{max-width:100%;height:auto;}
+    }
+    .footer-white{height:20px;background:$white-color;width:100%;}
     & .info-bgwhite{background:$white-color;}
     & .buttons{height:40px;background:$white-color;padding-right:10px;font-size:$number_14;
       & button{border:1px solid $br-color;background:$white-color;border-radius:14px;margin-left:12px;padding:0 10px;height:24px;
@@ -512,5 +518,31 @@ small{font-size:$number_12;color:$gray-light-color}
         & .tx{padding-top:10px;}
       }
     }
+  }
+}
+
+/*图片上传*/
+.upload-phone{overflow:hidden;
+  & .phone-check{background:$white-color;padding:0 10px;
+    & .items{@include hairline(top,$br-color);@include hairline(bottom,$br-color);overflow:hidden;
+      & ._title{background:#fff;height:36px;font-size:$number_14;@include hairline(bottom,$br-color);position:relative;}
+      & .info{padding:20px 0;overflow:hidden;
+        & .upload-check{width:30%; background:url($upload_add) no-repeat center center;background-size:contain;height:100px;position:relative;
+          & .del-phone{position:absolute;top:-4px;right:-4px;height:20px;width:20px;background:url($upload_close) no-repeat center center;background-size:100%;}
+          & img{width:100%;height:100%}
+        }
+      }
+    }
+  }
+  & .detail-btns{padding:0 10px;margin-top:30px; }
+}
+
+/*我的相册*/
+.myphone{overflow:hidden;
+  & .phone-check + .phone-check{margin-top:10px; }
+  /*处理类似相册的特殊逻辑*/
+  & .worker_imgs_content{overflow:hidden;padding-top:10px;height:auto;
+    & div{position:relative;width:30%;overflow:hidden;height:100%;}
+    & img{max-width:100%;height:auto;}
   }
 }

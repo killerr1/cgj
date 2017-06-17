@@ -68,4 +68,14 @@ html/module/user/ucenter.html;
 html/module/user/appointment_detail.html;
 
 
+照片审核列表
+html/module/worker/phonelist.html;
+
+照片上传
+html/module/worker/phone_upload.html;
+
+我的相册
+html/module/worker/myphone.html;
+
+
 ∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽
