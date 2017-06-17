@@ -49,3 +49,23 @@ html/module/user/userinfo.html;
 html/module/user/appointment_order_action.html;
 
 ∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽
+
+**2017-06-17**
+
+∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽
+部分页面的样式bug修复(带底部菜单的可能需要重新拉下HTML)
+
+
+阿姨列表(应该通用其他的状态,只是需要稍加修改)
+html/module/user/appointment.html;
+
+
+个人中心(应该通用其他的状态,只是需要稍加修改)
+html/module/user/ucenter.html;
+
+
+服务详情介绍
+html/module/user/appointment_detail.html;
+
+
+∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽
