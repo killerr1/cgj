@@ -91,5 +91,17 @@ html/module/broker/home.html;
 阿姨管理
 html/module/broker/manage.html;
 
+新增阿姨
+html/module/broker/add_ay.html;
+
+结算中心
+html/module/broker/order_total.html;
+
+我的提成
+html/module/broker/my_total.html;
+
+阿姨排班
+html/module/worker/ayi_pb.html;
+
 
 ∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽

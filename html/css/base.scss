@@ -45,7 +45,7 @@ small{font-size:$number_12;color:$gray-light-color}
 .h2-font{color:$black-light-color;font-size:$number_14}
 .h2-font-light{color:$gray-color;font-size:$number_12}
 .h3-font{color:$black-light-color;font-size:$number_12}
-.font-black-light{color:$black-light-color;}
+.font-black-light{color:$black-light-color !important; }
 .font-gray{color:$gray-color;}
 .font-gray-light{color:$gray-light-color;}
 .font-org{color:$org-color !important;}
@@ -581,6 +581,63 @@ small{font-size:$number_12;color:$gray-light-color}
     & .form-li{padding:0 10px;
       & .li{position:relative;@include hairline(bottom,$br-color);color:$black-light-color;}
     }
+  }
+  & .phone-check{background:$white-color;padding:0 10px;
+    & .items{@include hairline(top,$br-color);@include hairline(bottom,$br-color);overflow:hidden;
+      & ._title{background:#fff;height:36px;font-size:$number_14;@include hairline(bottom,$br-color);position:relative;}
+      & .info{padding:20px 0;overflow:hidden;
+        & .upload-check{width:30%; background:url($upload_add) no-repeat center center;background-size:contain;height:100px;position:relative;
+          & .del-phone{position:absolute;top:-4px;right:-4px;height:20px;width:20px;background:url($upload_close) no-repeat center center;background-size:100%;}
+          & img{width:100%;height:100%}
+        }
+      }
+    }
+  }
+  & .btns-form-inline{padding:10px 10px;margin-top:20px;}
+}
+
+/*结算中心*/
+.js-content{overflow:hidden;
+  & .edit-items{overflow:hidden;background:#fff;
+    & ._title{padding:0 10px;height:36px;font-size:$number_14;@include hairline(bottom,$br-color);position:relative;color:$black-light-color;}
+    & .money-info{min-height:60px;padding-left:20px;font-size:$number_26;color:$org-color;
+      & ._money{font-size:$number_26;}
+      & ._type{font-size:$number_14;color:$gray-light-color;}
+      & ._date{font-size:$number_14;color:$gray-light-color;}
+      & .l{overflow:hidden;}
+      & .r{overflow:hidden;@include  hairline(left,$br-color);position:relative;padding-left:30px;height:100%;
+        &>div{padding:10px 0;}
+        & ._money{color:$black-light-color;}
+      }
+    }
+  }
+}
+
+/*排班*/
+.ayi_paiban_content{overflow:hidden;
+
+}
+
+/*日期控件*/
+.control_date{overflow:hidden;background:$white-color;
+  & .month{height:36px;padding:0 10px;font-size:$number_14;color:$gray-light-color;
+    & .left-btn{
+      & .arrow-left{margin-right:10px;background:url($arrow-right) no-repeat center;width:10px;height:10px;background-size:cover;transform:rotate(180deg);}
+    }
+    & .right-btn{
+      & .arrow-right{margin-left:10px;background:url($arrow-right) no-repeat center;width:10px;height:10px;background-size:cover;}
+    }
+    & .month-text{color:$black-light-color;}
+  }
+  & .week{background:$bg-color;font-size:$number_14;height:30px;padding:0 10px;color:$gray-light-color;
+    &>div{width:(100/7) * 1%;text-align:center;height:30px;line-height:30px;}
+  }
+  & .days{background:$white-color;padding:10px;padding-top:0;
+    &>div{width:(100/7) * 1%;text-align:center;height:30px;line-height:30px;margin-top:16px;font-size:$number_14;color:$white-color;}
+    & .d{background:url($control-date-default) no-repeat center center;background-size:contain;}
+    & .leave{background:url($control-date-leave) no-repeat center center;background-size:contain;}
+    & .rest{background:url($control-date-rest) no-repeat center center;background-size:contain;}
+    & .today{background:url($control-date-today) no-repeat center center;background-size:contain;}
   }
 }
 
