@@ -85,5 +85,11 @@ html/module/worker/myphone.html;
 我的资料编辑
 html/module/worker/edit.html;
 
+经纪人首页
+html/module/broker/home.html;
+
+阿姨管理
+html/module/broker/manage.html;
+
 
 ∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽

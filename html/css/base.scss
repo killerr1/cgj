@@ -145,18 +145,22 @@ small{font-size:$number_12;color:$gray-light-color}
   & .worker{width:20px;height:20px;background:url($work-default) no-repeat center;background-size:cover;}
   & .mywork{width:20px;height:20px;background:url($mywork-default) no-repeat center;background-size:cover;}
   & .uinfo{width:20px;height:20px;background:url($uinfo-default) no-repeat center;background-size:cover;}
+  & .ay{width:20px;height:20px;background:url($ay-default) no-repeat center;background-size:cover;}
+  & .dd{width:20px;height:20px;background:url($dd-default) no-repeat center;background-size:cover;}
   & .active{
     & .worker{width:20px;height:20px;background:url($work-action) no-repeat center;background-size:cover;}
     & .mywork{width:20px;height:20px;background:url($mywork-action) no-repeat center;background-size:cover;}
     & .uinfo{width:20px;height:20px;background:url($uinfo-action) no-repeat center;background-size:cover;}
+    & .ay{width:20px;height:20px;background:url($ay-action) no-repeat center;background-size:cover;}
+    & .dd{width:20px;height:20px;background:url($dd-action) no-repeat center;background-size:cover;}
   }
 }
 
 /*表单提交*/
 .form-li{overflow:hidden;
   & .li + .li{margin-top:10px}
-  & .li{font-size:$number_14;background:$white-color;min-height:50px;position:relative;padding:0 12px;color:$gray-light-color;
-    & .l{overflow:hidden;font-size:$number_14;color:$gray-light-color;}
+  & .li{font-size:$number_14;background:$white-color;min-height:40px;position:relative;padding:0 12px;color:$gray-light-color;
+    & .l{width:60px; overflow:hidden;font-size:$number_14;color:$gray-light-color;}
     & .r{color:$black-light-color;padding-left:10px;height:100%;
       & input{border:none;height:100%;width:100%;font-size:$number_14;color:$black-light-color;}
       &.textarea{padding:10px 0 10px 10px;height:100px;font-size:$number_14;color:$black-light-color;}
@@ -411,7 +415,7 @@ small{font-size:$number_12;color:$gray-light-color}
     & .tag{color:$white-color;background:$black-light-color;border-radius:5px;padding:0 5px;}
 }
 .worker_info{overflow:hidden;background:$white-color;padding:10px 15px;@include hairline(bottom,$br-color);@include hairline(top,$br-color);position:relative;
-  & .title{font-size:$number_16;color:$black-light-color;position:relative;@include hairline(bottom,$br-color);height:30px;}
+  & .title{font-size:$number_14;color:$black-light-color;position:relative;@include hairline(bottom,$br-color);height:30px;}
   & .worker_info_content{overflow:hidden;font-size:$number_14;padding-top:8px;
     >div{width:100%;}
     &>div:nth-child(-n+4){width:50%;}
@@ -423,7 +427,7 @@ small{font-size:$number_12;color:$gray-light-color}
 }
 
 .worker_imgs{overflow:hidden;background:$white-color;padding:10px 15px;@include hairline(bottom,$br-color);@include hairline(top,$br-color);position:relative;
-  & .title{font-size:$number_16;color:$black-light-color;position:relative;@include hairline(bottom,$br-color);height:30px;}
+  & .title{font-size:$number_14;color:$black-light-color;position:relative;@include hairline(bottom,$br-color);height:30px;}
   & .worker_imgs_content{overflow:hidden;padding-top:10px;height:auto;
     & div{position:relative;width:30%;overflow:hidden;height:100%;}
     & img{max-width:100%;height:auto;}
@@ -431,7 +435,7 @@ small{font-size:$number_12;color:$gray-light-color}
 }
 
 .worker_broker{overflow:hidden;background:$white-color;padding:10px 15px;@include hairline(bottom,$br-color);@include hairline(top,$br-color);position:relative;
-  & .title{font-size:$number_16;color:$black-light-color;position:relative;@include hairline(bottom,$br-color);height:30px;}
+  & .title{font-size:$number_14;color:$black-light-color;position:relative;@include hairline(bottom,$br-color);height:30px;}
   & .worker_broker_content{overflow:hidden;padding:10px 0;
     &>img{height:60px;width:60px;}
     & .r-text{padding-left:10px;font-size:$number_14;
@@ -569,3 +573,14 @@ small{font-size:$number_12;color:$gray-light-color}
     }
   }
 }
+
+/*新增阿姨*/
+.ayi-edit-content{overflow:hidden;
+  & .edit-items{overflow:hidden;background:#fff;
+    & ._title{padding-left:10px;height:36px;font-size:$number_14;@include hairline(bottom,$br-color);position:relative;color:$black-light-color;}
+    & .form-li{padding:0 10px;
+      & .li{position:relative;@include hairline(bottom,$br-color);color:$black-light-color;}
+    }
+  }
+}
+
