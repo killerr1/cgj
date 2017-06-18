@@ -104,4 +104,7 @@ html/module/broker/my_total.html;
 html/module/worker/ayi_pb.html;
 
 
+(页面应该差不多了,如果有疑问及时沟通。谢谢)
+
+
 ∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽
