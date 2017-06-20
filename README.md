@@ -116,5 +116,11 @@ html/module/worker/ayi_pb.html;
 阿姨个人中心
 html/module/worker/ucenter.html;
 
+首页的新增
+html/module/user/home.html;
+
+修改阿姨管理
+html/module/broker/manage.html;
+
 
 ∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽

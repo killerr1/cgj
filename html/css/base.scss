@@ -507,7 +507,7 @@ small{font-size:$number_12;color:$gray-light-color}
 /*首页*/
 .worker-content{overflow:hidden;
   & .w-li{overflow:hidden;background:$white-color;
-    & ._title{font-size:$number_14;height:40px;padding:0 10px;position:relative;@include hairline(bottom,$br-color);color:$black-light-color !important;
+    & ._title{font-size:$number_14;height:36px;padding:0 10px;position:relative;@include hairline(bottom,$br-color);color:$black-light-color !important;
       & .right-arrow{margin-left:10px;background:url($arrow-right) no-repeat right center;width:20px;height:20px;background-size:16px}
     }
     & .column-2{overflow:hidden;padding:10px 0;
@@ -521,6 +521,14 @@ small{font-size:$number_12;color:$gray-light-color}
     }
     & .column-3{overflow:hidden;padding:10px 0;
       & .li{height:120px;color:$black-light-color;font-size:$number_14;position:relative;width:33%;
+        & .imgbox{position:relative;}
+        & .imgbox img{width:125 / 2 * 1px;height: 125/2 * 1px;}
+        & .imgbox .number_tip{position:absolute;height:20px;width:20px;background:red;border-radius:50%;font-size:$number_12;color:$white-color;right:0;top:0;}
+        & .tx{padding-top:10px;}
+      }
+    }
+    & .column-4{overflow:hidden;padding:10px 0;
+      & .li{height:120px;color:$black-light-color;font-size:$number_14;position:relative;width:24%;
         & .imgbox{position:relative;}
         & .imgbox img{width:125 / 2 * 1px;height: 125/2 * 1px;}
         & .imgbox .number_tip{position:absolute;height:20px;width:20px;background:red;border-radius:50%;font-size:$number_12;color:$white-color;right:0;top:0;}
@@ -646,3 +654,18 @@ small{font-size:$number_12;color:$gray-light-color}
   }
 }
 
+/*新首页*/
+.home-banner{overflow:hidden;
+  & img{max-width:100%;}
+}
+.home-item{overflow:hidden;background:#fff;
+  & .l{width:40%;overflow:hidden;@include hairline(right,$br-color);position:relative;height:100%;padding:10px 0;
+    & img{max-width:100%;}
+  }
+  & .r{overflow:hidden;padding:10px 0;
+    & a:first-child{@include hairline(bottom,$br-color);position:relative;}
+    & a{overflow:hidden;height:50%;
+      & img{max-width:100%;}
+    }
+  }
+}
