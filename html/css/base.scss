@@ -376,7 +376,7 @@ small{font-size:$number_12;color:$gray-light-color}
 
 /*服务详情*/
 .appointment_detail_content{overflow:hidden;
-  & .banner{height:350/2 * 1px;font-size:0px;overflow:hidden;
+  & .banner{font-size:0px;overflow:hidden;
     &>img{max-width:100%}
   }
   & .item-imgs{overflow:hidden;background:$white-color;padding:10px 15px;
@@ -654,8 +654,9 @@ small{font-size:$number_12;color:$gray-light-color}
   }
 }
 
+
 /*新首页*/
-.home-banner{overflow:hidden;
+.home-banner{overflow:hidden;font-size:0;
   & img{max-width:100%;}
 }
 .home-item{overflow:hidden;background:#fff;
