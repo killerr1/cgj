@@ -463,6 +463,11 @@ small{font-size:$number_12;color:$gray-light-color}
     & i.fw{margin-right:10px;background:url($ucenter-icon-fw) no-repeat right center;width:20px;height:20px;background-size:cover;}
     & i.wt{margin-right:10px;background:url($ucenter-icon-wt) no-repeat right center;width:20px;height:20px;background-size:cover;}
     & i.sz{margin-right:10px;background:url($ucenter-icon-sz) no-repeat right center;width:20px;height:20px;background-size:cover;}
+    & i.ll{margin-right:10px;background:url($ucenter-icon-ll) no-repeat right center;width:20px;height:20px;background-size:cover;}
+    & i.gz{margin-right:10px;background:url($ucenter-icon-gz) no-repeat right center;width:20px;height:20px;background-size:cover;}
+    & i.pb{margin-right:10px;background:url($ucenter-icon-pb) no-repeat right center;width:20px;height:20px;background-size:cover;}
+    & i.sh{margin-right:10px;background:url($ucenter-icon-sh) no-repeat right center;width:20px;height:20px;background-size:cover;}
+    & i.xc{margin-right:10px;background:url($ucenter-icon-xc) no-repeat right center;width:20px;height:20px;background-size:cover;}
     & .right-arrow{background:url($arrow-right) no-repeat right center;;width:20px;height:20px;background-size:14px}
   }
   &>div:last-child:after{display:none !important;}
