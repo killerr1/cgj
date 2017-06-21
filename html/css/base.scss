@@ -89,8 +89,9 @@ small{font-size:$number_12;color:$gray-light-color}
 */
 .mask{position:fixed;width:100%;height:100%;background:rgba(0,0,0,.3);z-index:9997;}
 .nav-childlist{display:none;}
+.nav-date{display:none;}
 .mask{display:none;}
-.nav-fixed{position:fixed;width:100%;top:0;left:0;z-index:9999;
+.nav-fixed{position:fixed;top:0;left:0;z-index:9999;
   & .nav-childlist{display:block;overflow:hidden;width:100%;background:$white-color;padding:10px;z-index:9998;padding-top:40px;
     & .li{height:50px;@include hairline(bottom,$br-color);position:relative;font-size:$number_14;
       & .icon-check{height:16px;width:16px;background:url($hook-icon) no-repeat center;background-size:cover;margin-right:5px;display:none;}
@@ -98,6 +99,26 @@ small{font-size:$number_12;color:$gray-light-color}
     & .active{color:$org-color;
       & .icon-check{display:block !important;}
     }
+  }
+  & .mask{display: block !important;}
+}
+.nav-fixed-date{position:fixed;width:100%;top:0;left:0;z-index:9999;
+  & .nav-date{display:block;overflow:hidden;width:100%;background:$white-color;z-index:9998;padding-top:40px;
+    & .check-type{font-size:$number_14;height:40px;@include hairline(bottom,$br-color);position:relative;padding:0 10px;
+      & a{background:$white-color;color:$black-light-color;padding:1px 12px;border-radius:13px;border:1px solid $br-color;margin-right:10px;}
+      & a.active{background:$org-color;color:$white-color;border:none;}
+    }
+    & .check-date{font-size:$number_14;height:42px;@include  hairline(bottom,$br-color);position:relative;padding:0 10px;
+      & input{width:80px;height:24px;border:1px solid $br-color;font-sie:$number_12;text-align:center;}
+      & a{padding:0 4px;color:$black-light-color; }
+    }
+    & .nav-fixed-btns{height:40px;margin-top:10px;font-size:$number_14;
+      & a{height:100%;}
+      & a._reset{color:$white-color;background:$gray-light-color;}
+      & a._ok{color:$white-color;background:$org-color;}
+    }
+    & .d{color:$black-light-color;background:none !important; }
+    & .check{background:url("../images/control-date/ic_02_today.png") no-repeat center center !important;background-size:contain !important;color:$white-color;}
   }
   & .mask{display: block !important;}
 }
@@ -263,7 +284,7 @@ small{font-size:$number_12;color:$gray-light-color}
   & a{text-align:center;font-size:$number_14;color:$black-light-color;
     & .updowm-arrow{margin-left:10px;background:url($arrow-right) no-repeat center;width:10px;height:10px;background-size:cover;transform:rotate(90deg);}
   }
-  & a.active{color:$org-color;border-bottom:2px solid $org-color;height:100%;;line-height:40px;
+  & a.active{color:$org-color;height:100%;;line-height:40px;
     & .updowm-arrow{}
   }
 }

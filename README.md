@@ -128,4 +128,8 @@ html/module/broker/manage.html;
 修改钟点工文字描述
 html/module/user/appointment_detail.html;
 
+修改阿姨预约
+html/module/user/appointment.html;
+修改样式 "nav-fixed-date"(添加到对象 id="nav-top")
+
 ∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽
