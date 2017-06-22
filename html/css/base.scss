@@ -92,7 +92,7 @@ small{font-size:$number_12;color:$gray-light-color}
 .nav-date{display:none;}
 .mask{display:none;}
 .nav-fixed{position:fixed;top:0;left:0;z-index:9999;
-  & .nav-childlist{display:block;overflow:hidden;width:100%;background:$white-color;padding:10px;z-index:9998;padding-top:40px;
+  & .nav-childlist{display:block;overflow:hidden;width:100%;background:$white-color;padding:10px;z-index:9998;padding-top:40px;position:fixed;
     & .li{height:50px;@include hairline(bottom,$br-color);position:relative;font-size:$number_14;
       & .icon-check{height:16px;width:16px;background:url($hook-icon) no-repeat center;background-size:cover;margin-right:5px;display:none;}
     }
@@ -280,7 +280,7 @@ small{font-size:$number_12;color:$gray-light-color}
 .model-btn{position:fixed;bottom:40px;width:100%;padding:0 20px;font-size:$number_14;}
 
 /*订单列表*/
-.nav-bar{height:40px;background:$white-color;@include hairline(bottom,$br-color);position:fixed;width:100%;
+.nav-bar{height:40px;background:$white-color;@include hairline(bottom,$br-color);position:fixed;width:100%;z-index:9999;
   & a{text-align:center;font-size:$number_14;color:$black-light-color;
     & .updowm-arrow{margin-left:10px;background:url($arrow-right) no-repeat center;width:10px;height:10px;background-size:cover;transform:rotate(90deg);}
   }

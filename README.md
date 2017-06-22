@@ -133,3 +133,14 @@ html/module/user/appointment.html;
 修改样式 "nav-fixed-date"(添加到对象 id="nav-top")
 
 ∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽
+
+**2017-06-22**
+
+优化阿姨列表的下拉框的2个状态样式
+html/module/user/appointment.html;
+
+
+带日期的下拉样式 : id="nav-top"的对象 class="nav-fixed-date"
+普通下拉样式 id="nav-top"的对象 class="nav-fixed"
+
+∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽
