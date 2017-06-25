@@ -56,8 +56,8 @@ small{font-size:$number_12;color:$gray-light-color}
 .p-r10{padding-right:10px; }
 .p-t10{padding-top:10px;}
 .p-t20{padding-top:20px;}
-.p-b20{padding-bottom:20px;}
-.p-b10{padding-bottom:10px;}
+.p-b20{padding-bottom:20px !important; }
+.p-b10{padding-bottom:10px !important; }
 .m-t10{margin-top:10px;}
 .m-t20{margin-top:20px;}
 
@@ -315,7 +315,7 @@ small{font-size:$number_12;color:$gray-light-color}
     .footer-white{height:20px;background:$white-color;width:100%;}
     & .info-bgwhite{background:$white-color;}
     & .buttons{height:40px;background:$white-color;padding-right:10px;font-size:$number_14;
-      & button{border:1px solid $br-color;background:$white-color;border-radius:14px;margin-left:12px;padding:0 10px;height:24px;
+      & button{border:1px solid $br-color;background:$white-color;border-radius:14px;margin-left:12px;padding:0 20px;height:24px;
         &.org{color:$org-color;}
         &.org-bg{color:$white-color;background:$org-color;border:none;}
       }
@@ -689,5 +689,18 @@ small{font-size:$number_12;color:$gray-light-color}
     & a{overflow:hidden;height:50%;
       & img{max-width:100%;}
     }
+  }
+}
+
+/*阿姨预约列表*/
+.worker-list{overflow:hidden;
+  & .info{overflow:hidden;
+    & .m{overflow:hidden;height:auto !important;
+      & .checkbtn{border-radius:5px;background:#adbec4;color:$white-color;height:20px;padding:0 10px;font-size:$number_12;margin-left:10px;  }
+    }
+    & .r{overflow:hidden;height:auto !important;}
+  }
+  & .info-list{font-size:$number_14;color:$gray-light-color;padding:4px 10px;
+    & ._t{padding-right:10px;}
   }
 }
