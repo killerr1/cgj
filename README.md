@@ -136,7 +136,7 @@ html/module/user/appointment.html;
 
 **2017-06-22**
 
-优化阿姨列表的下拉框的2个状态样式
+优化阿姨列表的下拉框的2个状态样式shu
 html/module/user/appointment.html;
 
 
@@ -149,6 +149,21 @@ html/module/user/appointment.html;
 
 新增阿姨预约列表
 html/module/worker/orderlist.html;
+
+
+∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽
+
+**2017-07-03*
+
+预约详情流程页面的修改
+html/module/user/appointment_order_action.html;
+
+** 备注:ID = 'tab-ing',有3个样式分别为P1,P2,P3 分别代表当前的3个状态,其余的样式都不需要修改
+
+预约阿姨页面
+html/module/user/appointment.html;
+
+** 备注:新增了JS的demo。具体没有详细写完整。因为是原生的写的,你应该是用得JQ 或者其他的。修改成你得即可
 
 
 ∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽

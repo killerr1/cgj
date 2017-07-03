@@ -10,21 +10,21 @@
 </head>
 <body class="body-main notoolbar">
     <div class="content-body">
-        <div id="nav-top" class="nav-fixed-date">
-            <div class="nav-bar flexbox flexbox-align br-none">
-                <a href="#" class="flexbox flexbox-align flexbox-flex1 br-none">
+        <div id="nav-top" class="">
+            <div class="nav-bar flexbox flexbox-align br-none" id="navbar">
+                <a href="#" class="flexbox flexbox-align flexbox-flex1 br-none"  data-type="1">
                     <span>保姆</span>
                     <i class="updowm-arrow"></i>
                 </a>
-                <a href="#" class="flexbox flexbox-align flexbox-flex1">
+                <a href="#" class="flexbox flexbox-align flexbox-flex1" data-type="2">
                     <span>服务地区</span>
                     <i class="updowm-arrow"></i>
                 </a>
-                <a href="#" class="flexbox flexbox-align flexbox-flex1">
+                <a href="#" class="flexbox flexbox-align flexbox-flex1" data-type="3">
                     <span>工资</span>
                     <i class="updowm-arrow"></i>
                 </a>
-                <a href="#" class="flexbox flexbox-align flexbox-flex1 active">
+                <a href="#" class="flexbox flexbox-align flexbox-flex1" data-type="4">
                     <span>状态筛选</span>
                     <i class="updowm-arrow"></i>
                 </a>
@@ -186,5 +186,27 @@
             </div>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded',function () {
+            document.querySelector('#navbar').addEventListener('click',function(e){
+                var e = e.target || e,_obj,_checktype,
+                    navtop = document.getElementById('nav-top'),
+                    navtop_data = ['nav-fixed','nav-fixed','nav-fixed','nav-fixed-date'];
+
+                if(e.tagName == 'SPAN' || e.tagName == 'I'){
+                    _obj = e.parentNode;
+                }
+                else{
+                    _obj = e.target;
+                }
+                if(_obj.getAttribute('data-type')){
+                    _checktype = _obj.getAttribute('data-type');
+                    navtop.setAttribute('class',navtop_data[parseInt(_checktype) - 1]);
+                    _obj.setAttribute('class',_obj.getAttribute('class').toString() + ' active'); //这个地方我就没有去写样式的方法了。只是做一个参照,正常的是需要siblings来处理其他的样式。原声的我就没写了
+                }
+            })
+        })
+
+    </script>
 </body>
 </html>

@@ -227,7 +227,7 @@ small{font-size:$number_12;color:$gray-light-color}
       & .pro_bar{height:20px;width:90%;position:relative;
         & .pro-ing{width:70%;position:absolute;
           & .pro-bar-l{width:100%;height:5px;background:#adbec4;position:absolute;top:45%;left:0;z-index:98;}
-          & .pro-bar-r{background:#adbec4;}
+          & .pro-bar-r{background:$org-color;}
         }
         & .icon{background:url($nav-default) no-repeat center 2px;background-size:cover;height:22px;width:22px;position:relative;z-index:99}
       }
