@@ -170,4 +170,16 @@ html/module/user/appointment.html;
 html/module/user/appointment.html;
 
 ** 备注:修改增加了4个不同的DIV开控制不同的状态:nav-gz/nav-bm-nav-dq/nav-fixed-date
+
+
+新增弹框样式
+html/module/worker/u_edit.html;
+
+** 备注: 新增两个模式框,一个底部的弹框,一个中间的弹框。
+样式名称 : check_appointment_type、flexbox-content
+遮罩层 :  mask
+隐藏样式 :  hide
+操作方式通过JS控制2个层的显示(具体有问题及时沟通)
+
+
 ∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽

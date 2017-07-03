@@ -87,7 +87,7 @@ small{font-size:$number_12;color:$gray-light-color}
 /*遮盖层
   对应预约阿姨的列表
 */
-.mask{position:fixed;width:100%;height:100%;background:rgba(0,0,0,.3);z-index:9997;}
+.mask{position:fixed;width:100%;height:100%;background:rgba(0,0,0,.3);z-index:9997;left:0;top:0;}
 .nav-childlist{display:none;}
 .nav-date{display:none;}
 .mask{display:none;}
@@ -146,6 +146,47 @@ small{font-size:$number_12;color:$gray-light-color}
   & .mask{display: block !important;}
 }
 
+
+/*底部弹框*/
+.footer-model-box{position:fixed;bottom:0;left:0;background:$white-color;width:100%;z-index:9998;
+  & ._title{height:40px;color:$blue-light-coolor;position:relative;@include hairline(bottom,$br-color);padding:0 10px;font-size:$number_14;}
+  & .content{overflow:hidden;font-size:$number_12;color:$black-light-color;}
+}
+
+/*服务模块*/
+.check_appointment_type{
+  & .content{overflow:hidden;min-height:100px;height:140px;
+    &  ._left{width:128px;position:relative;@include hairline(right,$br-color);font-size:$number_14;height:100%;
+      & .li{height:40px;position:relative;@include hairline(bottom,$br-color);padding-left:10px;}
+      & .active{background:$org-color;color:$white-color;}
+    }
+    & ._right{height:100%; @include scrollable;font-size:$number_14;height:100%;
+      & .li{height:40px;position:relative;@include hairline(bottom,$br-color);padding-left:20px;
+        & .icon-check{height:20px;width:20px;background:url($checkbox-default) no-repeat center;background-size:cover;margin-right:5px;}
+        & input[type=checkbox]:checked + div{background:url($checkbox-action) no-repeat center;background-size:cover;margin-right:5px;}
+      }
+    }
+  }
+}
+
+/*选择用户*/
+.flexbox-content{height:100%;width:100%;position:fixed;left:0;top:0;z-index:9998;
+  & .check_worker{background:$white-color;width:84%;border-radius:5px;overflow:hidden;
+    & ._title{height:45px;background:$gray-color;border-radius:5px;overflow:hidden;margin:10px;
+      & input{border:none;height:100%;width:100%;padding-left:40px;font-size:$number_14;color:$black-light-color;background:url($input-search) #ececee no-repeat 15px center;background-size:15px;}
+    }
+    & ._content{@include scrollable;max-height:200px;margin:0 10px;
+      & .li{height:45px;position:relative;@include hairline(bottom,$br-color);
+        & .icon-check{height:20px;width:20px;background:url($checkbox-default) no-repeat center;background-size:cover;margin-right:10px;}
+        & input[type=checkbox]:checked + div{background:url($checkbox-action) no-repeat center;background-size:cover;margin-right:10px;}
+      }
+    }
+    & .btns{height:40px;background:#ececee;color:$black-light-color;
+      &>div{text-align:center;font-size:$number_14;}
+      &>div.enter{color:$blue-light-coolor;}
+    }
+  }
+}
 
 
 /*新flex盒布局*/
