@@ -91,8 +91,8 @@ small{font-size:$number_12;color:$gray-light-color}
 .nav-childlist{display:none;}
 .nav-date{display:none;}
 .mask{display:none;}
-.nav-fixed{position:fixed;top:0;left:0;z-index:9999;
-  & .nav-childlist{display:block;overflow:hidden;width:100%;background:$white-color;padding:10px;z-index:9998;padding-top:40px;position:fixed;
+.nav-bm{position:fixed;top:0;left:0;z-index:9999;
+  & .nav-bm{display:block;overflow:hidden;width:100%;background:$white-color;padding:10px;z-index:9998;padding-top:40px;position:fixed;
     & .li{height:50px;@include hairline(bottom,$br-color);position:relative;font-size:$number_14;
       & .icon-check{height:16px;width:16px;background:url($hook-icon) no-repeat center;background-size:cover;margin-right:5px;display:none;}
     }
@@ -102,6 +102,29 @@ small{font-size:$number_12;color:$gray-light-color}
   }
   & .mask{display: block !important;}
 }
+.nav-dq{position:fixed;top:0;left:0;z-index:9999;
+  & .nav-dq{display:block;overflow:hidden;width:100%;background:$white-color;padding:10px;z-index:9998;padding-top:40px;position:fixed;
+    & .li{height:50px;@include hairline(bottom,$br-color);position:relative;font-size:$number_14;
+      & .icon-check{height:16px;width:16px;background:url($hook-icon) no-repeat center;background-size:cover;margin-right:5px;display:none;}
+    }
+    & .active{color:$org-color;
+      & .icon-check{display:block !important;}
+    }
+  }
+  & .mask{display: block !important;}
+}
+.nav-gz{position:fixed;top:0;left:0;z-index:9999;
+  & .nav-gz{display:block;overflow:hidden;width:100%;background:$white-color;padding:10px;z-index:9998;padding-top:40px;position:fixed;
+    & .li{height:50px;@include hairline(bottom,$br-color);position:relative;font-size:$number_14;
+      & .icon-check{height:16px;width:16px;background:url($hook-icon) no-repeat center;background-size:cover;margin-right:5px;display:none;}
+    }
+    & .active{color:$org-color;
+      & .icon-check{display:block !important;}
+    }
+  }
+  & .mask{display: block !important;}
+}
+
 .nav-fixed-date{position:fixed;width:100%;top:0;left:0;z-index:9999;
   & .nav-date{display:block;overflow:hidden;width:100%;background:$white-color;z-index:9998;padding-top:40px;
     & .check-type{font-size:$number_14;height:40px;@include hairline(bottom,$br-color);position:relative;padding:0 10px;

@@ -166,4 +166,8 @@ html/module/user/appointment.html;
 ** 备注:新增了JS的demo。具体没有详细写完整。因为是原生的写的,你应该是用得JQ 或者其他的。修改成你得即可
 
 
+预约阿姨页面修改 - 2
+html/module/user/appointment.html;
+
+** 备注:修改增加了4个不同的DIV开控制不同的状态:nav-gz/nav-bm-nav-dq/nav-fixed-date
 ∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽
