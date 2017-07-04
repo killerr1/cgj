@@ -553,6 +553,10 @@ small{font-size:$number_12;color:$gray-light-color}
     & i.pb{margin-right:10px;background:url($ucenter-icon-pb) no-repeat right center;width:20px;height:20px;background-size:cover;}
     & i.sh{margin-right:10px;background:url($ucenter-icon-sh) no-repeat right center;width:20px;height:20px;background-size:cover;}
     & i.xc{margin-right:10px;background:url($ucenter-icon-xc) no-repeat right center;width:20px;height:20px;background-size:cover;}
+    & i.gs{margin-right:10px;background:url($ucenter-icon-gs) no-repeat right center;width:20px;height:20px;background-size:cover;}
+    & i.js{margin-right:10px;background:url($ucenter-icon-js) no-repeat right center;width:20px;height:20px;background-size:cover;}
+    & i.tc{margin-right:10px;background:url($ucenter-icon-tc) no-repeat right center;width:20px;height:20px;background-size:cover;}
+    & i.xx{margin-right:10px;background:url($ucenter-icon-xx) no-repeat right center;width:20px;height:20px;background-size:cover;}
     & .right-arrow{background:url($arrow-right) no-repeat right center;;width:20px;height:20px;background-size:14px}
   }
   &>div:last-child:after{display:none !important;}
