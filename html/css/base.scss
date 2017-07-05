@@ -126,7 +126,7 @@ small{font-size:$number_12;color:$gray-light-color}
 }
 
 .nav-fixed-date{position:fixed;width:100%;top:0;left:0;z-index:9999;
-  & .nav-date{display:block;overflow:hidden;width:100%;background:$white-color;z-index:9998;padding-top:40px;
+  & .nav-date{display:block;overflow:hidden;width:100%;background:$white-color;z-index:9998;padding-top:40px;position:fixed;
     & .check-type{font-size:$number_14;height:40px;@include hairline(bottom,$br-color);position:relative;padding:0 10px;
       & a{background:$white-color;color:$black-light-color;padding:1px 12px;border-radius:13px;border:1px solid $br-color;margin-right:10px;}
       & a.active{background:$org-color;color:$white-color;border:none;}

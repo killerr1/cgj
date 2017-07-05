@@ -190,4 +190,9 @@ html/module/worker/u_edit.html;
 html/module/broker/ucenter.html;
 
 
+修改样式
+html/css/base.css
+
+**备注:修改当前的日期选择模块不能正常的显示被遮罩层覆盖的bug
+
 ∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽
