@@ -217,4 +217,7 @@ html/module/user/address.html;
 样式修改
 修改了右侧的浮动窗口的层级,线覆盖的bug
 
+样式修改,修改了服务流程的样式
+"<div class="flexbox flexbox-align flexbox-flex1 flexbox-column p3" id="tab-ing">" 对应内容,p1/p2/p3三个不同的状态
+
 ∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽
