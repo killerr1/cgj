@@ -221,3 +221,33 @@ html/module/user/address.html;
 "<div class="flexbox flexbox-align flexbox-flex1 flexbox-column p3" id="tab-ing">" 对应内容,p1/p2/p3三个不同的状态
 
 ∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽
+
+**2017-07-26*
+
+后台界面处理======
+
+
+登录页面
+html/module/admin/login.html;
+
+找回密码
+html/module/admin/getpwd.html;
+备注:当前获取验证码的读秒状态class="dis"
+
+经纪人后台注册
+html/module/admin/signup.html;
+备注:当前获取验证码的读秒状态class="dis"
+
+个人中心
+html/module/admin/account.html;
+
+列表
+html/module/admin/list.html;
+
+个人资料编辑
+html/module/admin/account_edit.html;
+
+新增阿姨编辑
+html/module/admin/add.html;
+
+∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽
