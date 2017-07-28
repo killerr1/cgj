@@ -251,3 +251,14 @@ html/module/admin/account_edit.html;
 html/module/admin/add.html;
 
 ∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽
+
+**2017-07-28*
+
+经纪人详情
+html/module/admin/detail_jjr.html;
+
+经纪人编辑
+html/module/admin/edit_jjr.html;
+
+
+∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽
