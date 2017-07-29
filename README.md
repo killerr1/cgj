@@ -262,3 +262,30 @@ html/module/admin/edit_jjr.html;
 
 
 ∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽
+
+**2017-07-29*
+
+部分页面的补充
+
+阿姨列表
+html/module/admin/ay_list.html;
+
+照片审核
+html/module/admin/zpsh.html;
+
+客户列表
+html/module/admin/list_kh.html;
+
+阿姨详情
+html/module/admin/ay_detail.html;
+
+照片审核
+html/module/admin/zpsh.html;
+
+审核详情
+html/module/admin/sh_detail.html;
+
+结算
+html/module/admin/js.html;
+
+∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽

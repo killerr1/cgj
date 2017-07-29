@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>经纪人列表</title>
+    <title>阿姨列表</title>
     <link href="../../css/admin.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -17,7 +17,7 @@
         </div>
         <div class="right">
             <a href="#" class="userinfo">
-                <img src="//p1.meituan.net/deal/ba7764120541b925b54a5398d49579e4136141.jpg" alt="">
+                <img src="../../images/admin/ic_m.png" alt="">
                 koobe
             </a>
             <a href="#" class="out">
@@ -34,16 +34,58 @@
         </div>
         <div class="right-content">
             <div class="list-content">
-                <div class="search">
-                    <div class="input">
-                        <input type="text">
-                    </div>
-                    <button class="btn">搜索</button>
+                <div class="search-edit">
+                   <div class="_t">筛选条件</div>
+                   <div class="input-list">
+                       <div class="inputs">
+                           <div class="_t fl">服务条件:</div>
+                           <div class="_input fl">
+                               <input type="text">
+                           </div>
+                       </div>
+                       <div class="inputs">
+                           <div class="_t fl">服务地区:</div>
+                           <div class="_input fl">
+                               <select name="" id="">
+                                   <option value="">深圳</option>
+                               </select>
+                           </div>
+                       </div>
+                       <div class="inputs">
+                           <div class="_t fl">工资:</div>
+                           <div class="_input fl">
+                               <div class="_input fl">
+                                   <select name="" id="">
+                                       <option value="">4500元</option>
+                                   </select>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="inputs">
+                           <div class="_t fl">状态:</div>
+                           <div class="_input fl">
+                               <div class="_input fl">
+                                   <select name="" id="">
+                                       <option value="">无状态</option>
+                                   </select>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="inputs">
+                           <div class="_t fl"></div>
+                           <div class="_input fl">
+                               <div class="_input fl">
+                                   <input type="text" class="w300" placeholder="请输入关键字">
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="btns btn-box">
+                       <button class="cancel">清楚所有条件</button>
+                       <button class="edit">搜索</button>
+                   </div>
                 </div>
-                <div class="tools-bar">
-                    <button class="del fl">批量删除</button>
-                    <button class="add fr">新增经纪人</button>
-                </div>
+
                 <div class="table-content">
                     <table>
                         <thead>
