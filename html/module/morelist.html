@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>morelist</title>
+    <script src="https://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
+    <style>
+        body,html{height:100%;}
+    </style>
+</head>
+<body>
+<div id="morelist" style="height:100%;overflow-y:scroll;">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+</body>
+<script>
+    (function($){
+        $.fn.listmore = function(fn){
+            this.each(function(){
+                window.ifscroll = true;
+                $(this).bind('scroll', function () {
+                    if (window.ifscroll) {
+                        var newheight = $(this)[0].scrollTop + document.documentElement.clientHeight,
+                                bodyheight = $(this)[0].scrollHeight
+                        if ((bodyheight - newheight) < $(this)[0].scrollHeight / 2) {
+                            fn.call(this,null);
+                            window.ifscroll = false;
+                        }
+                    }
+                })
+            })
+        }
+    })(window.jQuery || window.Zepto)
+
+    $(document).ready(function(){
+        $('#morelist').listmore(function(e){
+            //回调方法,拉倒底部执行AJAX 方法,然后拉取数据,判断条件如果是最后一页则不拉取数据,应结构而定
+        });
+    })
+</script>
+</html>

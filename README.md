@@ -289,3 +289,10 @@ html/module/admin/sh_detail.html;
 html/module/admin/js.html;
 
 ∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽
+
+
+**2017-07-31*
+
+当前的下拉加载的实例module=>morelist.html
+
+∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽
