@@ -227,6 +227,23 @@ small{font-size:$number_12;color:$gray-light-color}
   & .content-body{@include scrollable();height:100%}
 }
 
+/*滚动容器*/
+.scroll-x {
+  white-space: nowrap;
+  width: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll-y {
+  white-space: nowrap;
+  width: auto;
+  overflow-y: auto;;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
 /*底部菜单*/
 .notoolbar{padding-bottom:0 !important}
 .toolbar{height:$toolbar;background:$white-color;@include hairline(top,$br-color);position:fixed;bottom:0;left:0;width:100%;
@@ -641,11 +658,12 @@ small{font-size:$number_12;color:$gray-light-color}
   & .phone-check{background:$white-color;padding:0 10px;
     & .items{@include hairline(top,$br-color);@include hairline(bottom,$br-color);overflow:hidden;
       & ._title{background:#fff;height:36px;font-size:$number_14;@include hairline(bottom,$br-color);position:relative;}
-      & .info{padding:20px 0;overflow:hidden;
-        & .upload-check{width:30%; background:url($upload_add) no-repeat center center;background-size:contain;height:100px;position:relative;
-          & .del-phone{position:absolute;top:-4px;right:-4px;height:20px;width:20px;background:url($upload_close) no-repeat center center;background-size:100%;}
+      & .info{height:160px;width:100%;padding:20px 0 10px 0;
+        & .upload-check{width:110px;height:110px;display:inline-block;background:url($upload_add) no-repeat center center;background-size:contain;position:relative;
+          & .del-phone{z-index:999;position:absolute;top:-4px;right:-4px;height:20px;width:20px;background:url($upload_close) no-repeat center center;background-size:100%;}
           & img{width:100%;height:100%}
         }
+        & .upload-check+ .upload-check{margin-left:10px;}
       }
     }
   }

@@ -1,5 +1,5 @@
 /*函数区*/
-@function pxtorem($px){
+@function px2rem($px){
   @return ($px/$size) * 1rem;
 }
 
