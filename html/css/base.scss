@@ -231,16 +231,16 @@ small{font-size:$number_12;color:$gray-light-color}
 .scroll-x {
   white-space: nowrap;
   width: auto;
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
   -webkit-overflow-scrolling: touch;
 }
 
 .scroll-y {
   white-space: nowrap;
   width: auto;
-  overflow-y: auto;;
-  overflow-x: hidden;
+  overflow-y: auto !important;;
+  overflow-x: hidden !important;
   -webkit-overflow-scrolling: touch;
 }
 
