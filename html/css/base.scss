@@ -64,14 +64,14 @@ small{font-size:$number_12;color:$gray-light-color}
 
 
 /*右侧图标*/
-.right_tools{width:35px;background:rgba(0,0,0,.6);position:fixed;bottom:60px;right:10px;height:auto;border-radius:5px;padding:6px 0;z-index:99;
+.right_tools{width:35px;background:rgba(0,0,0,.6);position:fixed;bottom:60px;right:10px;height:auto;border-radius:5px;padding:6px 0;z-index:999;
   &>a{position:relative;@include hairline(top,$br-color);}
   & .icom-home{background:url(../images/controls-icon/ic_home.png) no-repeat center;background-size:24px; width:35px;height:35px;display:inline-block;}
   &>a:first-child:before{display:none;}
 }
 
 /*按钮*/
-.btns-form{background:$btn-bg-color;color:$white-color;height:$toolbar;position:fixed;bottom:0;left:0;width:100%;font-size:$number_14}
+.btns-form{background:$btn-bg-color;color:$white-color;height:$toolbar;position:fixed;bottom:0;left:0;width:100%;font-size:$number_14;z-index:999;}
 .btns-white{background:$white-color;height:$btn_height;color:$org-color;width:100%;border-radius:5px;border:1px solid $org-color;font-size:$number_14}
 .btns-gray-1{background:$white-color;height:$btn_height;color:$gray-color;width:100%;border-radius:5px;border:1px solid $br-color;font-size:$number_14}
 .btns-gray{background:$white-color;height:$btn_height;color:$org-color;width:100%;border-radius:5px;border:1px solid $br-color;font-size:$number_14}
