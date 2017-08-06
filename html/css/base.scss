@@ -271,8 +271,8 @@ small{font-size:$number_12;color:$gray-light-color}
 .form-li{overflow:hidden;
   & .li + .li{margin-top:10px}
   & .li{font-size:$number_14;background:$white-color;min-height:40px;position:relative;padding:0 12px;color:$gray-light-color;
-    & .l{width:60px; overflow:hidden;font-size:$number_14;color:$gray-light-color;}
-    & .r{color:$black-light-color;padding-left:10px;height:100%;
+    & .l{width:90px; overflow:hidden;font-size:$number_14;color:$gray-light-color;}
+    & .r{color:$black-light-color;height:100%;
       & input{border:none;height:100%;width:100%;font-size:$number_14;color:$black-light-color;}
       &.textarea{padding:10px 0 10px 10px;height:100px;font-size:$number_14;color:$black-light-color;}
       & textarea{border:none;height:100%;width:100%;font-size:$number_14;}
@@ -802,10 +802,7 @@ small{font-size:$number_12;color:$gray-light-color}
 
 
 /*重写微信 */
-.weui-cell{padding:0 !important;}
-.weui-uploader__file{width:110px !important;height:110px !important;}
-.weui-uploader__file+.weui-uploader__file{margin-left:10px !important;}
-.weui-cells_form{
-  &:after{display:none !important}
-  &:before{display:none !important}
-}
+.weui-uploader__bd{width:100% !important;overflow-x:scroll;height:120px !important;;overflow-y:hidden;}
+.weui-uploader__files{white-space: nowrap !important;}
+.weui-uploader__file{float:none !important;width:110px !important;height:110px !important;display:inline-block;}
+.weui-uploader__input-box{float:none !important;width:100px !important;height:100px !important;display:inline-block;}
