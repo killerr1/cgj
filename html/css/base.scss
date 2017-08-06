@@ -799,3 +799,13 @@ small{font-size:$number_12;color:$gray-light-color}
     & ._t{padding-right:10px;}
   }
 }
+
+
+/*重写微信 */
+.weui-cell{padding:0 !important;}
+.weui-uploader__file{width:110px !important;height:110px !important;}
+.weui-uploader__file+.weui-uploader__file{margin-left:10px !important;}
+.weui-cells_form{
+  &:after{display:none !important}
+  &:before{display:none !important}
+}
