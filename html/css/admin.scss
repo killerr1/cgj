@@ -230,5 +230,13 @@ small{font-size:$number_12;color:$gray-light-color}
     }
   }
 }
+/*统计*/
+.statistics{padding:20px;font-size:14px;border:1px solid #e7e8ec;margin:0 20px;
+  .li{height:40px;line-height:40px;border-bottom:1px dotted #e7e8ec;
+    .l{float:left;min-width:400px;}
+    .m{float:left;}
+    .r{float:right;}
+  }
+}
 
 

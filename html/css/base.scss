@@ -60,6 +60,7 @@ small{font-size:$number_12;color:$gray-light-color}
 .p-b10{padding-bottom:10px !important; }
 .m-t10{margin-top:10px;}
 .m-l10{margin-left:10px;}
+.m-r10{margin-right:10px;}
 .m-t20{margin-top:20px;}
 
 
@@ -237,7 +238,6 @@ small{font-size:$number_12;color:$gray-light-color}
 }
 
 .scroll-y {
-  white-space: nowrap;
   width: auto;
   overflow-y: auto !important;;
   overflow-x: hidden !important;
