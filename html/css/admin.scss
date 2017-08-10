@@ -41,6 +41,7 @@ small{font-size:$number_12;color:$gray-light-color}
 .fr { float: right !important; }
 .clear{clear:both;overflow:hidden;}
 .gray-color{color:#b0b0b0;}
+.m-t30{margin-top:30px;}
 
 /*主体框架*/
 .body-content{background:$white-color;height:100%;width:100%;overflow:hidden;color:#333333;}
@@ -237,6 +238,12 @@ small{font-size:$number_12;color:$gray-light-color}
     .m{float:left;}
     .r{float:right;}
   }
+}
+
+/*表格title*/
+.table_title{height:30px;line-height:30px;font-size:14px;}
+.btns{clear:both;overflow:hidden;padding-top:10px;text-align:right;
+  &>button{margin-right:20px;width:120px;height:30px;border:none;background:$blue-light-coolor;color:$white-color;border-radius:5px;display:inline-block;}
 }
 
 

@@ -329,3 +329,11 @@ html/module/admin/js.html;
 新增结算中心界面/module/admin/js_jjr.html
 
 ∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽
+
+
+**2017-08-10*
+
+样式BUG修复,admin.css
+新增结算中心界面/module/admin/js_pt.html
+
+∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽
