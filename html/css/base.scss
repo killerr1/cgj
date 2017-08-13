@@ -802,4 +802,16 @@ small{font-size:$number_12;color:$gray-light-color}
 }
 
 /*单独抽离*/
-.right-arrow{background:url($arrow-right) no-repeat right center;;width:20px;height:20px;background-size:14px}
+.right-arrow{background:url($arrow-right) no-repeat center center;;width:20px;height:20px;background-size:14px}
+
+/*金额记录*/
+.m_li{font-size:$number_14;background:$white-color;min-height:40px;position:relative;padding:0 12px;color:$gray-light-color;
+  .right-arrow{transform:rotate(90deg);}
+}
+.m_table{overflow:hidden;background:#fff;
+  ._t{border-bottom:1px solid $org-color;font-size:14px;
+    div+div{border-left:1px solid $white-color;}
+  }
+  .tab{height:40px;color:$white-color;background:$org-color;}
+  ._li{height:40px;font-size:14px;color:$gray-color;border-bottom:1px dashed #f2f2f2;}
+}
