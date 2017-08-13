@@ -252,12 +252,12 @@ button.edit{margin-right:20px;padding:0 20px;height:24px;border:none;background:
 
 
 /*提示*/
-.modal-box{background:#fff;position:absolute;top:40%;left:40%;width:400px;height:200px;border-radius:5px;/*margin-top:-150%;margin-left:-200px;*/border:1px solid #222;z-index:9999;
+.modal-box{background:#fff;position:absolute;top:40%;left:40%;width:400px;height:200px;border-radius:5px;/*margin-top:-150%;margin-left:-200px;*/border:1px solid #222;z-index:9999;font-size:0;
   ._title{height:30px;line-height:30px;font-size:13px;padding:0 10px;border-bottom:1px solid #eee;background:#222;color:#fff;
     h1{float:left;font-size:14px;font-weight:bold;}
     .close{float:right;}
   }
-  ._content{background:#fff;
+  ._content{background:#fff;font-size:0;
     .left{float:left;width:150px;border-right:1px solid #169bd6;
       li{height:30px;line-height:30px;border-bottom:1px solid #169bd6;font-size:13px;padding-left:10px;}
       li.active{height:30px;line-height:30px;border-bottom:1px solid #169bd6;font-size:13px;padding-left:10px;background:#169bd6;color:#fff;}
