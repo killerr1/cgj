@@ -118,5 +118,29 @@
     </div>
 </div>
 
+<script src="https://cdn.bootcss.com/zepto/1.0rc1/zepto.min.js"></script>
+<script>
+    var tools = {
+        modal_loda : {
+            html : ['<div id="loading-modal" class="loading" style="position:absolute;top:0;left:0;height:100%;width:100%;z-index:9999">',
+                    '<div class="load flexbox flexbox-align" style="height:100%;background:rgba(0,0,0,.4);">',
+                    '<div style="background:#000;height:12%;width:22%;border-radius:5px;" class="flexbox flexbox-align">',
+                    '<img src="../../images/loading/load.gif" alt="" style="width:42px;height:42px;">',
+                    '</div>',
+                    '</div>',
+                    '</div>'],
+            show : function(){
+                $('body').append(this.html.join(''));
+            },
+            hide : function(){
+                $('#loading-modal').remove();
+            }
+        }
+    }
+
+    tools.modal_loda.show();
+
+</script>
+
 </body>
 </html>

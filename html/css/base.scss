@@ -269,7 +269,7 @@ small{font-size:$number_12;color:$gray-light-color}
 
 /*表单提交*/
 .form-li{overflow:hidden;
-  & .li + .li{margin-top:10px}
+  & .li + .li{margin-top:6px;}
   & .li{font-size:$number_14;background:$white-color;min-height:40px;position:relative;padding:0 12px;color:$gray-light-color;
     & .l{width:90px; overflow:hidden;font-size:$number_14;color:$gray-light-color;}
     & .r{color:$black-light-color;height:100%;
