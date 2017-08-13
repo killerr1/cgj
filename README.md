@@ -337,3 +337,10 @@ html/module/admin/js.html;
 新增结算中心界面/module/admin/js_pt.html
 
 ∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽
+
+
+**2017-08-13*
+新增搜索表单,admin.css
+新增结算中心界面/module/admin/ay_list.html
+
+∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽∽

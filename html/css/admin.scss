@@ -42,6 +42,7 @@ small{font-size:$number_12;color:$gray-light-color}
 .clear{clear:both;overflow:hidden;}
 .gray-color{color:#b0b0b0;}
 .m-t30{margin-top:30px;}
+.m-l-10{margin-left:10px;}
 
 /*主体框架*/
 .body-content{background:$white-color;height:100%;width:100%;overflow:hidden;color:#333333;}
@@ -244,6 +245,34 @@ small{font-size:$number_12;color:$gray-light-color}
 .table_title{height:30px;line-height:30px;font-size:14px;}
 .btns{clear:both;overflow:hidden;padding-top:10px;text-align:right;
   &>button{margin-right:20px;width:120px;height:30px;border:none;background:$blue-light-coolor;color:$white-color;border-radius:5px;display:inline-block;}
+}
+
+/*重写*/
+button.edit{margin-right:20px;padding:0 20px;height:24px;border:none;background:$blue-light-coolor;color:$white-color;border-radius:5px;display:inline-block;}
+
+
+/*提示*/
+.modal-box{background:#fff;position:absolute;top:40%;left:40%;width:400px;height:200px;border-radius:5px;/*margin-top:-150%;margin-left:-200px;*/border:1px solid #222;z-index:9999;
+  ._title{height:30px;line-height:30px;font-size:13px;padding:0 10px;border-bottom:1px solid #eee;background:#222;color:#fff;
+    h1{float:left;font-size:14px;font-weight:bold;}
+    .close{float:right;}
+  }
+  ._content{background:#fff;
+    .left{float:left;width:150px;border-right:1px solid #169bd6;
+      li{height:30px;line-height:30px;border-bottom:1px solid #169bd6;font-size:13px;padding-left:10px;}
+      li.active{height:30px;line-height:30px;border-bottom:1px solid #169bd6;font-size:13px;padding-left:10px;background:#169bd6;color:#fff;}
+    }
+    .right{float:left;}
+    ._tab{width:100%;margin-top:10px;clear:both;overflow:hidden;
+      li{float:left;width:50%;text-align:center;height:30px;line-height:30px;border-top:1px solid #eeeeee;border-bottom:1px solid #eeeeee;font-size:13px;}
+      li.active{background:#eeeeee;color:#333}
+    }
+    ._list{margin:10px 20px;overflow:hidden;
+      .li{float:left;height:30px;line-height:30px;font-size:13px;margin-right:14px;
+        &>input{margin-right:10px;}
+      }
+    }
+  }
 }
 
 
