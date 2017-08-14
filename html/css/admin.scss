@@ -18,7 +18,7 @@ small{font-size:$number_12;color:$gray-light-color}
 .text-overflow { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
 .dis-hide { visibility: hidden; }
 .del-text { text-decoration: line-through; }
-.text-align { text-align: center; }
+.text-align { text-align: center !important; }
 .text-right { text-align: right; }
 .text-left { text-align: left; }
 .text-justify{text-align-last:justify;}
