@@ -493,10 +493,16 @@ small{font-size:$number_12;color:$gray-light-color}
   }
   & .item-imgs{overflow:hidden;background:$white-color;padding:10px 15px;
     & .title{font-size:$number_14;color:$black-light-color;position:relative;@include hairline(bottom,$br-color);height:30px;}
-    & .imgs-list{overflow:hidden;padding-top:10px;
-      & .li{overflow:hidden;font-size:$number_14;padding:10px 0;text-align:center;font-size:0px;padding-bottom:0;width:25%;padding:0 4px;
+    & .imgs-list{overflow:hidden;
+      & .li{overflow:hidden;font-size:$number_14;padding:10px 4px;text-align:center;font-size:0px;padding-bottom:0;width:25%;
         &>img{max-width:100%;}
         &>span{font-size:$number_12;padding-top:10px;display:block;}
+      }
+    }
+    .nav-list{font-size:$number_14;position:relative;@include hairline(bottom,$br-color);
+      h1{font-size:$number_12;padding:4px 0; }
+      .navs{padding:6px 0;
+        img{max-width:100%;height:auto;}
       }
     }
   }
@@ -508,7 +514,11 @@ small{font-size:$number_12;color:$gray-light-color}
     & .title{font-size:$number_14;color:$black-light-color;position:relative;@include hairline(bottom,$br-color);height:30px;}
     & .item-price-list{font-size:$number_12;padding:20px 0;
       & dt{background:#f5f5f6;color:$gray-color;}
-      & dt,dd{height:30px;padding:0 20px;}
+      & dt,dd{min-height:30px;padding:0 20px;}
+      span{padding:5px 0;}
+      .item1{width:30%;}
+      .item3{width:30%;}
+      .item2{width:40%;}
     }
   }
 }
