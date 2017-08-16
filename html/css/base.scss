@@ -541,7 +541,7 @@ small{font-size:$number_12;color:$gray-light-color}
   & .worker_info_content{overflow:hidden;font-size:$number_14;padding-top:8px;
     >div{width:100%;}
     &>div:nth-child(-n+4){width:50%;}
-    & ._cloumn{height:30px;
+    & ._cloumn{min-eight:30px;
       &>span:first-child{width:68px; }
       &>span:last-child{padding-left:14px;}
     }
